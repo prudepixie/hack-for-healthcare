@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'doctors#index'
+  root to: 'welcome#index'
 
   devise_for :doctors
   resources :a1cs
