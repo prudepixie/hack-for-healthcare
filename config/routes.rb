@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  root to: 'doctors#index'
+
+  devise_for :doctors
   resources :a1cs
   resources :bloodpressures
   resources :phq9s
   resources :notes
   resources :patients
-  resources :doctors
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

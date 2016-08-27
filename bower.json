@@ -1,0 +1,17 @@
+{
+  "name": "hack-for-healthcare",
+  "homepage": "https://github.com/prudepixie/hack-for-healthcare",
+  "authors": [
+    "Wendy Hsu <wndyhsu@gmail.com>"
+  ],
+  "description": "communihealth for telecommunication services",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
