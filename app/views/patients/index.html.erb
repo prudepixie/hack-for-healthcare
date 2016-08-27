@@ -17,7 +17,7 @@
   <tbody>
     <% @patients.each do |patient| %>
       <tr>
-        <td><%= patient.name %></td>
+        <td><%= link_to patient.name, patient_path(patient.id) %></td>
         <td><%= patient.gender %></td>
         <td><%= patient.height %></td>
         <td><%= patient.weight %></td>

@@ -4,7 +4,7 @@ class PatientsController < ApplicationController
   # GET /patients
   # GET /patients.json
   def index
-    @patients = Patient.all
+    @patients = Patient.byDoctor(current_doctor.id)
   end
 
   # GET /patients/1
@@ -69,6 +69,6 @@ class PatientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def patient_params
-      params.require(:patient).permit(:name, :gender, :height, :weight, :birthday)
+      params.require(:patient).permit(:name, :gender, :height, :weight, :birthday, :doctor_id)
     end
 end

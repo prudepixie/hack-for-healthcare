@@ -31,6 +31,9 @@
     <%= f.label :birthday %><br>
     <%= f.date_select :birthday %>
   </div>
+
+  <%= f.hidden_field :doctor_id, value: "#{current_doctor.id}"%>
+  <%= current_doctor.id %>
   <div class="actions">
     <%= f.submit %>
   </div>
