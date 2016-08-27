@@ -1,0 +1,25 @@
+<%= form_for(@bloodpressure) do |f| %>
+  <% if @bloodpressure.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bloodpressure.errors.count, "error") %> prohibited this bloodpressure from being saved:</h2>
+
+      <ul>
+      <% @bloodpressure.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :systolic %><br>
+    <%= f.number_field :systolic %>
+  </div>
+  <div class="field">
+    <%= f.label :diastolic %><br>
+    <%= f.number_field :diastolic %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

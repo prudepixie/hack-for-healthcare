@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Systolic:</strong>
+  <%= @bloodpressure.systolic %>
+</p>
+
+<p>
+  <strong>Diastolic:</strong>
+  <%= @bloodpressure.diastolic %>
+</p>
+
+<%= link_to 'Edit', edit_bloodpressure_path(@bloodpressure) %> |
+<%= link_to 'Back', bloodpressures_path %>

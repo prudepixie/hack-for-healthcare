@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Phq9s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @phq9s.each do |phq9| %>
+      <tr>
+        <td><%= phq9.value %></td>
+        <td><%= link_to 'Show', phq9 %></td>
+        <td><%= link_to 'Edit', edit_phq9_path(phq9) %></td>
+        <td><%= link_to 'Destroy', phq9, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Phq9', new_phq9_path %>

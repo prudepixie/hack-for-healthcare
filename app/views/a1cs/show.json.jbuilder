@@ -1,0 +1,1 @@
+json.partial! "a1cs/a1c", a1c: @a1c
